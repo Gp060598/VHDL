@@ -1,0 +1,39 @@
+signal res_tb:std_logic_vector(3 downto 0);
+signal sum_rtl:std_logic_vector(3 downto 0);
+res_tb<=(sum_tb);
+sum_rtl<=(cin_tb+a_tb+b_tb);
+
+Library IEEE;
+Use IEEE.STD_LOGIC_1164.ALL;
+entity ripple_carry_adder_structural is
+generic( n:integer:=3);
+port( a,b:in std_logic_vector(n downto 0);
+      cin:in std_logic;
+      cout:out std_logic;
+      sum:out std_logic_vector(n downto 0)
+     );
+end ripple_carry_adder_structural;
+
+architecture structure of ripple_carry_adder_structural is
+
+component full_adder is
+port( a,b,cin:in std_logic;
+      cout,sum:out std_logic);
+end component;
+signal cout_in:std_logic_vector(n downto 0);
+begin
+u1:for i in a'range generate
+u2:if (i=0) generate
+UT:full_adder port map(a=>a(i),b=>b(i),cin=>cin,sum=>sum(i),cout=>cout_in(i));
+end generate u2;
+u3:if(i>0) generate
+UT:full_adder port map(a=>a(i),b=>b(i),cin=>cout_in(i-1),sum=>sum(i),cout=>cout_in(i));
+end generate u3;
+u4:if(i=n) generate
+UT:full_adder port map(a=>a(i),b=>b(i),cin=>cout_in(i-1),sum=>sum(i),cout=>cout);
+end generate u4;
+end generate u1;
+
+
+
+end structure;

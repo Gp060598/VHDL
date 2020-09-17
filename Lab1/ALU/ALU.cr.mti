@@ -1,0 +1,31 @@
+C:/Modeltech_pe_edu_10.4a/examples/LAB1(2203)/ALU/ALU.vhd {1 {vcom -work work -2008 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB1(2203)\ALU\ALU.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity alu
+-- Compiling architecture alu_structure of alu
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB1(2203)/ALU/ALU_test_bench.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB1(2203)\ALU\ALU_test_bench.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity test_bench
+-- Compiling architecture Alu_tb of test_bench
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB1(2203)/ALU/test.vhd {1 {vcom -work work -2008 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB1(2203)\ALU\test.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity testing
+-- Compiling architecture testing_done of testing
+
+} {} {}}
