@@ -1,0 +1,92 @@
+C:/Modeltech_pe_edu_10.4a/examples/LAB2/Data_path.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB2\Data_path.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity data_path
+-- Compiling architecture structure of data_path
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB2/Reg_file_tb.vhd {1 {vcom -work work -2002 -explicit {C:\Modeltech_pe_edu_10.4a\examples\LAB2\Reg_file_tb.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 12:10:46 on Sep 15,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:\Modeltech_pe_edu_10.4a\examples\LAB2\Reg_file_tb.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity reg_test
+-- Compiling architecture test_bench of reg_test
+End time: 12:10:46 on Sep 15,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB2/alu_reg_test.vhd {0 {vcom -work work -2002 -explicit {C:\Modeltech_pe_edu_10.4a\examples\LAB2\alu_reg_test.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 12:10:46 on Sep 15,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:\Modeltech_pe_edu_10.4a\examples\LAB2\alu_reg_test.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity test_bench
+-- Compiling architecture Alu_tb of test_bench
+** Error: C:\Modeltech_pe_edu_10.4a\examples\LAB2\alu_reg_test.vhd(29): (vcom-1035) Formal port "clk" has OPEN or no actual associated with it.
+
+** Error: C:\Modeltech_pe_edu_10.4a\examples\LAB2\alu_reg_test.vhd(29): (vcom-1035) Formal port "en" has OPEN or no actual associated with it.
+
+** Error: C:\Modeltech_pe_edu_10.4a\examples\LAB2\alu_reg_test.vhd(29): (vcom-1035) Formal port "reset" has OPEN or no actual associated with it.
+
+** Error: C:\Modeltech_pe_edu_10.4a\examples\LAB2\alu_reg_test.vhd(45): VHDL Compiler exiting
+End time: 12:10:46 on Sep 15,2020, Elapsed time: 0:00:00
+Errors: 4, Warnings: 0
+
+} {12.0 13.0 14.0 15.0 16.0 17.0 18.0 19.0} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB2/alu_reg.vhd {1 {vcom -work work -2008 -explicit {C:\Modeltech_pe_edu_10.4a\examples\LAB2\alu_reg.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 12:10:46 on Sep 15,2020
+vcom -reportprogress 300 -work work -2008 -explicit C:\Modeltech_pe_edu_10.4a\examples\LAB2\alu_reg.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity alu
+-- Compiling architecture alu_structure of alu
+End time: 12:10:46 on Sep 15,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB2/clock_test.vhd {1 {vcom -work work -2008 -explicit {C:\Modeltech_pe_edu_10.4a\examples\LAB2\clock_test.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+Start time: 12:10:46 on Sep 15,2020
+vcom -reportprogress 300 -work work -2008 -explicit C:\Modeltech_pe_edu_10.4a\examples\LAB2\clock_test.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity clock
+-- Compiling architecture test of clock
+End time: 12:10:46 on Sep 15,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB2/Reg_file.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB2\Reg_file.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity reg_file
+-- Compiling architecture reg of reg_file
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB2/test_reg_a.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB2\test_reg_a.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity reg_test_trial
+-- Compiling architecture test_bench_trial of reg_test_trial
+
+} {} {}}
