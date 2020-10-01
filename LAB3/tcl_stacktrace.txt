@@ -1,0 +1,36 @@
+Sat Sep 19 11:55:15 CEST 2020
+Trace back: can't read "vsimPriv(:grid)": no such element in array
+    while executing
+"set grid $vsimPriv($w:grid)"
+    (procedure "Wave::BindDND" line 3)
+    invoked from within
+"Wave::BindDND [$windowobj GetRegisteredChild]"
+    (procedure "Wave::WaveDock" line 4)
+    invoked from within
+"Wave::WaveDock .main_pane.wave"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-dockcommand) $frame_name"
+    (object "::.main_pane.wave" method "::mtiwidgets::WindowObj::_Dock" body line 8)
+    invoked from within
+"$windowobj _Dock"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::Dock" body line 19)
+    invoked from within
+"Dock $windowobj $geometry $suppress_error"
+    (object "::.windowmgr" method "::mtiwidgets::WindowMgr::ToggleDock" body line 14)
+    invoked from within
+"::.windowmgr ToggleDock .main_pane.wave"
+    (in namespace inscope "::mtiwidgets::WindowMgr" script line 1)
+    invoked from within
+"namespace inscope ::mtiwidgets::WindowMgr {::.windowmgr ToggleDock .main_pane.wave}"
+    invoked from within
+".main_pane.wave.interior.header.btns.expel invoke"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 [list $w invoke]"
+    (procedure "tk::ButtonUp" line 24)
+    invoked from within
+"tk::ButtonUp .main_pane.wave.interior.header.btns.expel"
+    (command bound to event)
+  <2:C:/Modeltech_pe_edu_10.4a/win32pe_edu/tk8.5/bgerror.tcl:92: ::tkerror {can't read "vsimPriv(:grid)": no such element in array}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "vsimPriv(:grid)": no such element in array}
