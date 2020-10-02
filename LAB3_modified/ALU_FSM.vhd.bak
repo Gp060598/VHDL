@@ -1,0 +1,120 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+package my_declerations is
+subtype opcode is std_logic_vector(2 downto 0);
+subtype reg is std_logic_Vector(2 downto 0);
+subtype operation is std_logic_Vector(3 downto 0);
+
+type instruction is record
+Ie:std_logic;
+reset:std_logic;
+wreg,ra,rb:reg;
+wren,reada,readb:std_logic;
+op:opcode;
+alu_en:std_logic;
+oe:std_logic;
+end record;
+
+type program is array(natural range <>) of instruction;
+constant ADD_C:operation:="0000";
+constant sub_C:operation:="0001";
+constant And_C:operation:="0010";
+constant OR_C:operation:="0011";
+constant xor_C:operation:="0100";
+constant not_C:operation:="0101";
+constant mov_C:operation:="0110";
+constant NOP_C:operation:="0111";
+constant LD_C:operation:="1000";
+constant ST_C:operation:="1001";
+constant LDI_C:operation:="1010";
+constant NOT_USED:operation:="1011";
+constant BRZ:operation:="1100";
+constant BRN:operation:="1101";
+constant BRO:operation:="1110";
+constant BRA:operation:="1111";
+
+constant add_a:opcode:="000";
+constant sub_a:opcode:="001";
+constant and_a:opcode:="010";
+constant or_a:opcode:="011";
+constant xor_a:opcode:="100";
+constant movb_a:opcode:="101";
+constant mov:opcode:="110";
+constant incr_a:opcode:="111";
+
+constant reg0:reg:="000";
+constant reg1:reg:="001";
+constant reg2:reg:="010";
+constant reg3:reg:="011";
+constant reg4:reg:="100";
+constant reg5:reg:="101";
+constant reg6:reg:="110";
+constant reg7:reg:="111";
+
+end package;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_signed.all;
+use ieee.std_logic_arith.all;
+
+entity alu is
+generic(N:integer:=16);
+port( op:in std_logic_vector(2 downto 0);
+      a,b:in std_logic_vector(N-1 downto 0);
+      y:OUT std_logic_vector(N-1 downto 0);
+      z_flag,n_flag,o_flag:OUT std_logic;
+      en,reset:in std_logic
+    
+     );
+end alu;
+
+architecture alu_structure of alu is
+signal temp:std_logic_vector(N downto 0);
+signal overflow:std_logic_vector(2 downto 0);
+--signal y_in:std_logic_vector(N-1 downto 0);
+--signal z_in,o_in,n_in:std_logic;
+begin
+m:process(op,a,b,reset,en,temp,overflow) is
+ begin
+ if(reset='1')then
+ temp<=(others=>'0');
+elsif(en='1')then
+  case(op) is
+  when "000"=> temp<=('0'&a)+('0'&b);
+               overflow<=a(n-1)&b(n-1)&temp(n-1);
+  when "001"=> temp<=('0'&a)-('0'&b);
+               overflow<=a(n-1)&b(n-1)&temp(n-1);
+  when "010"=> temp<= '0'&(a and b);
+               
+  when "011"=> temp<='0'&(a or b);
+                
+  when "100"=> temp<= '0'&(a xor b);
+                 
+  when "101"=> temp<='0'& b;  --(not(a));
+                  
+  when "110"=> temp<='0'& a;
+
+  when others=> temp<=('0'&a)+ 1; --"00000000000000001"; 
+  end case;
+end if;
+if(op="000") then
+ if(overflow="001" or overflow="110") then o_flag<='1';
+ else o_flag<='0'; end if;
+elsif(op="001") then
+ if(overflow="011" or overflow="100") then o_flag<='1';
+ else o_flag<='0'; end if;
+else o_flag<='0';
+end if;
+end process m;
+y<=temp(n-1 downto 0);
+z_flag<='1' when (temp(n-1 downto 0)="000") else '0';
+n_flag<='1' when temp(n-1)='1' else '0';--(temp(3)='1') else '0';
+o_flag<='1' when (temp(n)='1')else '0';--(temp(4)='1') else '0';
+
+--y<="0000" when reset='1' else
+    --y_in when en='1' else "ZZZZ";
+--z_flag<=z_in when en='1' else '0';
+--n_flag<=n_in when en='1' else '0';
+--o_flag<=o_in when en='1' else '0';
+end alu_structure;

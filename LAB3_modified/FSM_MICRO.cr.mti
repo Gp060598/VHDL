@@ -1,0 +1,136 @@
+C:/Modeltech_pe_edu_10.4a/examples/LAB3/alu_fsm_test.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\alu_fsm_test.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity test_alu
+-- Compiling architecture Alu_tb of test_alu
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/FSM.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\FSM.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package my_declerations
+-- Compiling entity sm_trial
+-- Compiling architecture structure of SM_trial
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/ALU_TESTING.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\ALU_TESTING.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity alu_testing
+-- Compiling architecture alu_structure_testing of alu_testing
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/Test_CPU.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\Test_CPU.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package my_declerations
+-- Compiling entity test_cpu
+-- Compiling architecture st_tb of test_cpu
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/CLOCK_DIVIDER_FSM.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\CLOCK_DIVIDER_FSM.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity divider
+-- Compiling architecture implement of divider
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/TB_DATA_PATH_FSM.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\TB_DATA_PATH_FSM.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity test_d
+-- Compiling architecture data_test of test_d
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/Test_reg_file_fsm.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\Test_reg_file_fsm.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity reg_test_trial
+-- Compiling architecture test_bench_trial of reg_test_trial
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/tb_FSM.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\tb_FSM.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package my_declerations
+-- Compiling entity TB_sm_trial
+-- Compiling architecture tb of tb_sm_trial
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/TB_Micro_rom.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\TB_Micro_rom.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package my_declerations
+-- Compiling entity TB_ROM
+-- Compiling architecture Structure_TB_ROM of TB_ROM
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/CPU.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\CPU.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package my_declerations
+-- Compiling entity CPU
+-- Compiling architecture structure_cpu of cpu
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/my_component.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\my_component.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package my_declerations
+-- Compiling entity FSM
+-- Compiling architecture data_flow of FSM
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/Micro_code_rom.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\Micro_code_rom.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package my_declerations
+-- Compiling entity micro_rom
+-- Compiling architecture m_rom of micro_rom
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/REG_FSM.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\LAB3\REG_FSM.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity reg_file
+-- Compiling architecture reg of reg_file
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/LAB3/DATA_PATH_FSM.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/LAB3/DATA_PATH_FSM.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Loading package my_declerations
+-- Compiling entity data_way
+-- Compiling architecture structure of data_way
+
+} {} {}}

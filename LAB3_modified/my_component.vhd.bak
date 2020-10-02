@@ -1,0 +1,94 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+use work.my_declerations.all;
+
+entity FSM is
+  port(instr: IN operation;
+    clk,reset : IN std_logic;
+    state: OUT std_logic_vector(3 downto 0);
+    PC_out: OUT std_logic_vector(1 downto 0));
+end FSM;
+
+architecture data_flow of FSM is
+  
+  --signals
+  signal uPC,next_uPC : std_logic_vector(1 downto 0);
+  signal pres_state : std_logic_vector(3 downto 0);
+  
+begin
+   PC_out<= uPC;
+ -- state<= pres_state;
+  process(uPC,instr,reset,pres_state)
+  begin
+    if reset = '1' then
+     pres_state <= instr;
+     next_upc<="00";
+   else
+    case pres_state is
+    
+    when ADD_c|SUB_C|AND_c|OR_c|XOR_c|NOT_c|MOV_c =>
+      if uPC = "00" then
+        pres_state <= instr;
+        next_uPC <= "01";
+      elsif uPC = "01" then
+        next_uPC <= "10";
+      else
+        next_uPC <= "00";
+      end if;
+    
+    when NOP_c|Not_used =>
+      if uPC = "00" then
+        pres_state <= instr;
+        next_uPC <= "01";
+      else
+        next_uPC <= "00";
+      end if;
+    
+    when ST_c|LD_c =>
+       if uPC = "00" then
+        pres_state <= instr;
+        next_uPC <= "01";
+      elsif uPC = "01" then
+        next_uPC <= "10";
+      elsif uPC = "10" then
+        next_uPC <= "11";
+      else
+        next_uPC <= "00";
+      end if;
+    
+    when LDI_c =>
+      if uPC = "00" then
+        pres_state <= instr;
+        next_uPC <= "01";
+      elsif uPC = "01" then
+        next_uPC <= "10";
+      else
+        next_uPC <= "00";
+      end if;
+      
+    when BRZ|BRN|BRO|BRA =>
+        if uPC = "00" then
+          pres_state <= instr;
+          next_uPC <= "01";
+        else
+          next_uPC <= "00";
+        end if;
+    when others => report "Invalid instruction";
+    end case;
+  end if;
+  end process;
+  process(clk,reset)
+  begin
+    if (reset= '1') then
+      uPC <= "00";
+      state<=add_c;
+--     next_uPC <= "00";
+    elsif rising_edge(clk) then
+      uPC <= next_uPC;
+     state<=pres_state;
+    end if;
+  end process;
+end data_flow;
+
+
