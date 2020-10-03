@@ -7,8 +7,8 @@ entity CPU is
 generic( N:integer:= 16); --Here it is the no of bits
 port( Din: in std_logic_vector(n-1 downto 0);
       clk,reset:in std_logic;
-      output:out std_logic_vector(N-1 downto 0);
-      Z_flag,N_flag,O_flag:out std_logic 
+      address_cpu,dout:out std_logic_vector(N-1 downto 0);
+      Z_flag,N_flag,O_flag,R_WN:out std_logic 
      );
 end CPU;
 architecture structure_cpu of cpu is
@@ -20,7 +20,7 @@ port(inst: in operation;
      wren,reada,readb:out std_logic;
      uinst: out opcode;
      bypass:out std_logic_vector(2 downto 0);
-     address_en,data_en:out std_logic
+     address_en,data_en,r_wn:out std_logic
      );
 end component;
 
@@ -48,11 +48,12 @@ end component;
 component divider is
 port( clk_in:in std_logic;
      clk_out:out std_logic);
-end component;
+ end component;
 
 
 signal clk_out:std_logic;
 signal instr:operation;
+signal writeread:std_logic;
 --signal op:opcode;
 signal state:std_logic_vector(3 downto 0);
 signal Upc:std_logic_vector(1 downto 0);
@@ -63,9 +64,9 @@ signal bypass:std_logic_vector(2 downto 0);
 signal add_en,d_en:std_logic;
 signal ins:instruction;
 signal z,n_f,o:std_logic;
-signal address,data:std_logic_vector(N-1 downto 0);
+signal address:std_logic_vector(N-1 downto 0);
 type instruction_register_type is array(15 downto 0) of std_logic_vector(15 downto 0);
-constant instruction_register:instruction_register_type:=(X"9080",X"A406",X"80C0",X"AA04",X"A605",X"7000",X"6440",X"58C0",X"4040",X"2040",X"3040",X"1040",X"1040",X"0040",X"0040",X"A201");
+constant instruction_register:program(15 downto 0):=(X"9080",X"A406",X"80C0",X"AA04",X"A605",X"7000",X"6440",X"58C0",X"4040",X"2040",X"3040",X"1040",X"1040",X"0040",X"0040",X"A201");
 constant default_inst:instruction:=('0','0',reg0,Reg0,Reg0,'0','0','0',ADD_a,'1','1');
 signal current_instruction,sign_ex:std_logic_vector(n-1 downto 0);
 signal sign:std_logic;
@@ -80,11 +81,11 @@ signal addr:integer;
 
  A2: micro_rom port map(inst=>state,flag=>flag,upc=>upc,reset=>reset,wren=>wren,
                           reada=>reada,readb=>readb,uinst=>uinst,bypass=>bypass,
-                          address_en=>add_en, data_en=>d_en);
+                          address_en=>add_en, data_en=>d_en,r_wn=>writeread);
 
  A3: data_way generic map(3,16) port map(Ins=>Ins,offset=>offset,din=>din,bypass=>bypass,
                                         address_en=>add_en,data_en=>d_en,clk=>clk_out,
-                                        z_flag=>z,n_flag=>n_f,o_flag=>o,address=>address,data=>data);
+                                        z_flag=>z,n_flag=>n_f,o_flag=>o,address=>address,data=>dout);
 
  
 	sign<=current_instruction(8) when instr=LDI_C else current_instruction(11);
@@ -92,12 +93,16 @@ signal addr:integer;
 	offset<=sign_ex(15 downto 9)&current_instruction(8 downto 0) when instr=LDI_C else
         sign_ex(15 downto 12)&current_instruction(11 downto 0); 
 
-Output<=data;
+--dout<=data;
+address_cpu<=address;
+R_WN<=writeread;
+addr <= (conv_integer(unsigned(address))) mod 16;
+
 z_flag<=z;
 o_flag<=o;
 n_flag<=n_f;
-addr <= (conv_integer(unsigned(address))) mod 16;
-process(upc,reset,wren,reada,readb,current_instruction,instr,uinst) is
+
+process(upc,reset,wren,reada,readb,current_instruction,instr,uinst,z,n_f,o) is
      
 	begin	
 	if(reset='0') then
@@ -108,7 +113,7 @@ process(upc,reset,wren,reada,readb,current_instruction,instr,uinst) is
         flag<='0';
      else ins.reset<=reset;
         if upc="00" then
-	current_instruction<=instruction_register(addr);
+	current_instruction<=din;                           --instruction_register(addr);
         instr<=current_instruction(15 downto 12);      
         ins.wreg<=current_instruction(11 downto 9);
 	ins.ra<=current_instruction(8 downto 6);

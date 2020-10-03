@@ -16,7 +16,8 @@ alu_en:std_logic;
 oe:std_logic;
 end record;
 
-type program is array(natural range <>) of instruction;
+type instruction_array is array(natural range <>) of instruction;
+type program is array(natural range <>) of std_logic_vector(15 downto 0);
 constant ADD_C:operation:="0000";
 constant sub_C:operation:="0001";
 constant And_C:operation:="0010";
@@ -52,6 +53,7 @@ constant reg5:reg:="101";
 constant reg6:reg:="110";
 constant reg7:reg:="111";
 
+constant NU3:STD_LOGIC_VECTOR(2 DOWNTO 0):="000";
 end package;
 library ieee;
 use ieee.std_logic_1164.all;
