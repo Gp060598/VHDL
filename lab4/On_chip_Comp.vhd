@@ -12,7 +12,6 @@ port(clk,reset:in std_logic;
 end comp;
 
 architecture structure_comp of comp is
-
 component CPU is
 generic( N:integer:= 16); --Here it is the no of bits
 port( Din: in std_logic_vector(n-1 downto 0);
@@ -31,14 +30,17 @@ port(din:in std_logic_vector(N-1 downto 0);
      );
 end component;
 
-component fake_memory is
-generic(N:integer:=16);
-port(address:in std_logic_vector(7 downto 0);
-     data:in std_logic_vector(n-1 downto 0);
-     wren,clk:in std_logic;
-     q:out std_logic_vector(n-1 downto 0)
-     );
-end component;
+component memory IS
+	PORT
+	(
+		address		: IN STD_LOGIC_VECTOR (7 DOWNTO 0);
+		clock		: IN STD_LOGIC  := '1';
+		data		: IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+		wren		: IN STD_LOGIC ;
+		q		: OUT STD_LOGIC_VECTOR (15 DOWNTO 0)
+	);
+END component;
+for u3: memory use entity work.memory(structure_fake);
 
 component divider is
 port( clk_in:in std_logic;
@@ -55,9 +57,9 @@ u1:cpu generic map(16)port map(din=>din,clk=>clk_out,reset=>reset,address_cpu=>a
 
 u2:gpio generic map(16) port map(din=>data,reset=>reset,clk=>clk_out,dout=>output,ie=>ie,oe=>out_en);
 
-u3: fake_memory generic map(16) port map(address=>address(7 downto 0),clk=>clk_out,
+u3: memory generic map(16) port map(address=>address(7 downto 0),clock=>clk_out,
                                         wren=>wren,data=>data,q=>din);
-ie<='0' when address=x"F000" else '1';
+ie<='1' when address=x"F000" else '0';
 out_en<='1';
 
 end structure_comp;

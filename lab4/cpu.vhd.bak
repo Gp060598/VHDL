@@ -38,7 +38,7 @@ port(
       Ins:in instruction; --feed the instruction to the datapath
       offset,Din:in std_logic_vector(N-1 downto 0);
       Bypass:in std_logic_vector(2 downto 0);
-      address_en,data_en:in std_logic;
+      address_en,data_en,wren:in std_logic;
       clk:in std_logic;
       Z_flag,n_flag,o_flag:out std_logic;
       address,data:out std_logic_vector(N-1 downto 0)
@@ -64,7 +64,7 @@ signal bypass:std_logic_vector(2 downto 0);
 signal add_en,d_en:std_logic;
 signal ins:instruction;
 signal z,n_f,o:std_logic;
-signal address,data:std_logic_vector(N-1 downto 0);
+signal address:std_logic_vector(N-1 downto 0);
 type instruction_register_type is array(15 downto 0) of std_logic_vector(15 downto 0);
 constant instruction_register:program(15 downto 0):=(X"9080",X"A406",X"80C0",X"AA04",X"A605",X"7000",X"6440",X"58C0",X"4040",X"2040",X"3040",X"1040",X"1040",X"0040",X"0040",X"A201");
 constant default_inst:instruction:=('0','0',reg0,Reg0,Reg0,'0','0','0',ADD_a,'1','1');
@@ -83,9 +83,9 @@ signal addr:integer;
                           reada=>reada,readb=>readb,uinst=>uinst,bypass=>bypass,
                           address_en=>add_en, data_en=>d_en,r_wn=>writeread);
 
- A3: data_way generic map(3,16) port map(Ins=>Ins,offset=>offset,din=>din,bypass=>bypass,
+ A3: data_way generic map(3,16) port map(Ins=>Ins,offset=>offset,din=>din,bypass=>bypass,wren=>wren,
                                         address_en=>add_en,data_en=>d_en,clk=>clk_out,
-                                        z_flag=>z,n_flag=>n_f,o_flag=>o,address=>address,data=>data);
+                                        z_flag=>z,n_flag=>n_f,o_flag=>o,address=>address,data=>dout);
 
  
 	sign<=current_instruction(8) when instr=LDI_C else current_instruction(11);

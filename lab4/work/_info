@@ -52,38 +52,39 @@ R12
 R13
 R14
 Ecomp
-Z15 w1601722978
+Z15 w1601885630
 Z16 DPx4 work 15 my_declerations 0 22 3LzP@zMR7N<P3N6`Ni;Ni0
 R1
 R3
 R4
 R5
-Z17 8C:\Modeltech_pe_edu_10.4a\examples\lab4\On_chip_Comp.vhd
-Z18 FC:\Modeltech_pe_edu_10.4a\examples\lab4\On_chip_Comp.vhd
+Z17 8C:/Modeltech_pe_edu_10.4a/examples/lab4/On_chip_Comp.vhd
+Z18 FC:/Modeltech_pe_edu_10.4a/examples/lab4/On_chip_Comp.vhd
 l0
 L6
 VPMPPSoO][Me1nRCa24gfN3
 !s100 H;12oiThL6UFiA_GEDYEE1
 R8
 32
-Z19 !s110 1601722981
+Z19 !s110 1601885634
 !i10b 1
-Z20 !s108 1601722981.000000
-Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\On_chip_Comp.vhd|
-Z22 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\On_chip_Comp.vhd|
+Z20 !s108 1601885634.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab4/On_chip_Comp.vhd|
+Z22 !s107 C:/Modeltech_pe_edu_10.4a/examples/lab4/On_chip_Comp.vhd|
 !i113 1
 R13
 R14
 Astructure_comp
+Z23 DEx4 work 6 memory 0 22 ES2A`E:I=V_jl55NSMhoK0
 R16
 R1
 R3
 R4
-DEx4 work 4 comp 0 22 PMPPSoO][Me1nRCa24gfN3
-l50
+Z24 DEx4 work 4 comp 0 22 PMPPSoO][Me1nRCa24gfN3
+l52
 L14
-VS::kMFd9>d_J[EYFg`ER;2
-!s100 4X3]aWWfg8_dB50ma?X5]2
+V7MAAZb^4DEI@0QnZ?=BQ_1
+!s100 ZHf8_7@]ze=8aZnOf`S]z1
 R8
 32
 R19
@@ -95,25 +96,25 @@ R22
 R13
 R14
 Ecpu
-Z23 w1601718900
+Z25 w1601823804
 R16
 R1
 R3
 R4
 R5
-Z24 8C:\Modeltech_pe_edu_10.4a\examples\lab4\cpu.vhd
-Z25 FC:\Modeltech_pe_edu_10.4a\examples\lab4\cpu.vhd
+Z26 8C:\Modeltech_pe_edu_10.4a\examples\lab4\cpu.vhd
+Z27 FC:\Modeltech_pe_edu_10.4a\examples\lab4\cpu.vhd
 l0
 L6
 VghflFMLM:c=<ShYP^:BoH2
 !s100 zf:ajbm=?GEMh7e?bNJ;:1
 R8
 32
-Z26 !s110 1601722675
+Z28 !s110 1601823806
 !i10b 1
-Z27 !s108 1601722675.000000
-Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\cpu.vhd|
-Z29 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\cpu.vhd|
+Z29 !s108 1601823806.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\cpu.vhd|
+Z31 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\cpu.vhd|
 !i113 1
 R13
 R14
@@ -125,39 +126,39 @@ R4
 DEx4 work 3 cpu 0 22 ghflFMLM:c=<ShYP^:BoH2
 l77
 L14
-VgE^bl:FS0a4mNQ5LB`lz^2
-!s100 f8XFDG62BmM:QjGJ3iS6^1
+VF3UXiKdoPZO@`@z3ag7nK3
+!s100 amhQ6LLQZe]z^i`Z0NW?_3
 R8
 32
-R26
-!i10b 1
-R27
 R28
+!i10b 1
 R29
+R30
+R31
 !i113 1
 R13
 R14
 Edata_way
-Z30 w1601633232
+Z32 w1601797922
 R16
 R1
 R2
 R3
 R4
 R5
-Z31 8C:\Modeltech_pe_edu_10.4a\examples\lab4\data_path.vhd
-Z32 FC:\Modeltech_pe_edu_10.4a\examples\lab4\data_path.vhd
+Z33 8C:\Modeltech_pe_edu_10.4a\examples\lab4\data_path.vhd
+Z34 FC:\Modeltech_pe_edu_10.4a\examples\lab4\data_path.vhd
 l0
 L6
-VjDEfXAee^B7^XWWPF97813
-!s100 Th7fjA6CaTJ2?JmUWVJDM3
+V8_@@a[DSzAISOkGc6JUAh0
+!s100 ]dWS]DhXJ4bP^K300<Iin1
 R8
 32
-Z33 !s110 1601722670
+Z35 !s110 1601798366
 !i10b 1
-Z34 !s108 1601722670.000000
-Z35 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\data_path.vhd|
-Z36 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\data_path.vhd|
+Z36 !s108 1601798366.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\data_path.vhd|
+Z38 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\data_path.vhd|
 !i113 1
 R13
 R14
@@ -167,41 +168,41 @@ R1
 R2
 R3
 R4
-DEx4 work 8 data_way 0 22 jDEfXAee^B7^XWWPF97813
+DEx4 work 8 data_way 0 22 8_@@a[DSzAISOkGc6JUAh0
 l50
 L27
-V7O5SWB?`Ao3D:=J0J<?bj3
-!s100 2DRDW=PKgOgkYPOY32og70
+V<7o1KHgej1`DT7j=bhRVb0
+!s100 EV=]`bb`71N=9USPH@1<_1
 R8
 32
-R33
-!i10b 1
-R34
 R35
+!i10b 1
 R36
+R37
+R38
 !i113 1
 R13
 R14
 Edivider
-Z37 w1601633551
+Z39 w1601633551
 R1
 R2
 R3
 R4
 R5
-Z38 8C:\Modeltech_pe_edu_10.4a\examples\lab4\clk_divider.vhd
-Z39 FC:\Modeltech_pe_edu_10.4a\examples\lab4\clk_divider.vhd
+Z40 8C:\Modeltech_pe_edu_10.4a\examples\lab4\clk_divider.vhd
+Z41 FC:\Modeltech_pe_edu_10.4a\examples\lab4\clk_divider.vhd
 l0
 L5
 VE24;d`z;^=Fk72II`o;Nm2
 !s100 J2<k?[gjMm7PReAELjFRg1
 R8
 32
-Z40 !s110 1601722662
+Z42 !s110 1601722662
 !i10b 1
-Z41 !s108 1601722662.000000
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\clk_divider.vhd|
-Z43 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\clk_divider.vhd|
+Z43 !s108 1601722662.000000
+Z44 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\clk_divider.vhd|
+Z45 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\clk_divider.vhd|
 !i113 1
 R13
 R14
@@ -217,34 +218,34 @@ Vhc9Y2kn3;;b?7c@zA:lMe0
 !s100 =AdF67dcH2UJU9SU;3Yhj2
 R8
 32
-R40
-!i10b 1
-R41
 R42
+!i10b 1
 R43
+R44
+R45
 !i113 1
 R13
 R14
 Efake_memory
-Z44 w1601713799
+Z46 w1601801674
 R1
 R16
 R3
 R4
 R5
-Z45 8C:\Modeltech_pe_edu_10.4a\examples\lab4\Fake_memory.vhd
-Z46 FC:\Modeltech_pe_edu_10.4a\examples\lab4\Fake_memory.vhd
+Z47 8C:\Modeltech_pe_edu_10.4a\examples\lab4\Fake_memory.vhd
+Z48 FC:\Modeltech_pe_edu_10.4a\examples\lab4\Fake_memory.vhd
 l0
 L6
 VWGXG>1HNI<Wlf[]cI@=253
 !s100 YKDA_6CL?2DWg?[lESni73
 R8
 32
-Z47 !s110 1601722653
+Z49 !s110 1601801697
 !i10b 1
-Z48 !s108 1601722653.000000
-Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\Fake_memory.vhd|
-Z50 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\Fake_memory.vhd|
+Z50 !s108 1601801697.000000
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\Fake_memory.vhd|
+Z52 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\Fake_memory.vhd|
 !i113 1
 R13
 R14
@@ -254,39 +255,39 @@ R16
 R3
 R4
 DEx4 work 11 fake_memory 0 22 WGXG>1HNI<Wlf[]cI@=253
-l36
+l37
 L15
-VO>`Jl=@>QiCKS;n97oLUV0
-!s100 Y_<1;33ZVkj9TOB2:bozF1
+V9jST?kd[QbP=BP3Hng9n93
+!s100 h9C8OeBZ5F?LlTh70[Ul[0
 R8
 32
-R47
-!i10b 1
-R48
 R49
+!i10b 1
 R50
+R51
+R52
 !i113 1
 R13
 R14
 Efsm
-Z51 w1601633333
+Z53 w1601633333
 R16
 R3
 R4
 R5
-Z52 8C:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd
-Z53 FC:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd
+Z54 8C:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd
+Z55 FC:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd
 l0
 L6
 VKgjS@[U`9NSa4^e6@Bbd13
 !s100 35JEW_<ERSdSf_]RH=>`L2
 R8
 32
-Z54 !s110 1601722642
+Z56 !s110 1601722642
 !i10b 1
-Z55 !s108 1601722642.000000
-Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd|
-Z57 !s107 C:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd|
+Z57 !s108 1601722642.000000
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd|
+Z59 !s107 C:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd|
 !i113 1
 R13
 R14
@@ -301,33 +302,33 @@ VzdjI<TYo:PmBP8Va;Q7aJ3
 !s100 aET8Z@nHEOaRgYoF21e?d1
 R8
 32
-R54
-!i10b 1
-R55
 R56
+!i10b 1
 R57
+R58
+R59
 !i113 1
 R13
 R14
 Egpio
-Z58 w1601716519
+Z60 w1601821759
 R16
 R3
 R4
 R5
-Z59 8C:\Modeltech_pe_edu_10.4a\examples\lab4\GPIO.vhd
-Z60 FC:\Modeltech_pe_edu_10.4a\examples\lab4\GPIO.vhd
+Z61 8C:\Modeltech_pe_edu_10.4a\examples\lab4\GPIO.vhd
+Z62 FC:\Modeltech_pe_edu_10.4a\examples\lab4\GPIO.vhd
 l0
 L5
 V:LDNEWMHiVNA?P<c=VTU71
 !s100 oC44;^zn`6dUbDNIeBfBK1
 R8
 32
-Z61 !s110 1601722657
+Z63 !s110 1601821761
 !i10b 1
-Z62 !s108 1601722657.000000
-Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\GPIO.vhd|
-Z64 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\GPIO.vhd|
+Z64 !s108 1601821761.000000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\GPIO.vhd|
+Z66 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\GPIO.vhd|
 !i113 1
 R13
 R14
@@ -338,37 +339,80 @@ R4
 DEx4 work 4 gpio 0 22 :LDNEWMHiVNA?P<c=VTU71
 l16
 L14
-VjQK=^_aYV?7HA4OS[7XX^1
-!s100 8HIEg`Zlh@X[k[j9^hS@a0
+V92hM43NikI;4bC_hAhk@n2
+!s100 gMg6PK36<0]:S`9AEW6lh0
 R8
 32
-R61
-!i10b 1
-R62
 R63
+!i10b 1
 R64
+R65
+R66
+!i113 1
+R13
+R14
+Ememory
+Z67 w1601885046
+R1
+R16
+R3
+R4
+R5
+Z68 8C:/Modeltech_pe_edu_10.4a/examples/lab4/Fake_memory.vhd
+Z69 FC:/Modeltech_pe_edu_10.4a/examples/lab4/Fake_memory.vhd
+l0
+L6
+VES2A`E:I=V_jl55NSMhoK0
+!s100 gZ`9GSZ[izCn3Z[RE[RG_3
+R8
+32
+Z70 !s110 1601885050
+!i10b 1
+Z71 !s108 1601885050.000000
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab4/Fake_memory.vhd|
+Z73 !s107 C:/Modeltech_pe_edu_10.4a/examples/lab4/Fake_memory.vhd|
+!i113 1
+R13
+R14
+Astructure_fake
+R1
+R16
+R3
+R4
+R23
+l39
+L17
+VYG<ETh2Vbjb[Uh5CYe[=T3
+!s100 T:]JdW5Zd=1BiYE;Y@H;K0
+R8
+32
+R70
+!i10b 1
+R71
+R72
+R73
 !i113 1
 R13
 R14
 Emicro_rom
-Z65 w1601640119
+Z74 w1601640119
 R3
 R4
 R16
 R5
-Z66 8C:\Modeltech_pe_edu_10.4a\examples\lab4\micro_rom.vhd
-Z67 FC:\Modeltech_pe_edu_10.4a\examples\lab4\micro_rom.vhd
+Z75 8C:\Modeltech_pe_edu_10.4a\examples\lab4\micro_rom.vhd
+Z76 FC:\Modeltech_pe_edu_10.4a\examples\lab4\micro_rom.vhd
 l0
 L5
 V3o5;>`:U2@AbVA8a5`Uc]0
 !s100 YFFVRm[ekg4C^;AzJb1>J3
 R8
 32
-Z68 !s110 1601722650
+Z77 !s110 1601722650
 !i10b 1
-Z69 !s108 1601722650.000000
-Z70 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\micro_rom.vhd|
-Z71 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\micro_rom.vhd|
+Z78 !s108 1601722650.000000
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\micro_rom.vhd|
+Z80 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\micro_rom.vhd|
 !i113 1
 R13
 R14
@@ -383,11 +427,11 @@ Vd5GAjJgi:>4H^75Yzaibl2
 !s100 dAhkoD:Zl8Xh?jbJ7[=bo0
 R8
 32
-R68
+R77
 !i10b 1
-R69
-R70
-R71
+R78
+R79
+R80
 !i113 1
 R13
 R14
@@ -413,25 +457,25 @@ R12
 R13
 R14
 Ereg_file
-Z72 w1601633108
+Z81 w1601633108
 R1
 R2
 R3
 R4
 R5
-Z73 8C:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd
-Z74 FC:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd
+Z82 8C:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd
+Z83 FC:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd
 l0
 L6
 Vf2?oX^NR4zX@HB:Mmf8f93
 !s100 3TB^b8LRnKMTlQcWL;akS1
 R8
 32
-Z75 !s110 1601722667
+Z84 !s110 1601722667
 !i10b 1
-Z76 !s108 1601722667.000000
-Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd|
-Z78 !s107 C:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd|
+Z85 !s108 1601722667.000000
+Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd|
+Z87 !s107 C:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd|
 !i113 1
 R13
 R14
@@ -447,33 +491,33 @@ VHVI=ma[Mal]c?>?WgOL=]2
 !s100 LhBe7V8zHEUTRL^?eA]OA1
 R8
 32
-R75
+R84
 !i10b 1
-R76
-R77
-R78
+R85
+R86
+R87
 !i113 1
 R13
 R14
 Etest
-Z79 w1601722359
+Z88 w1601722359
 R16
 R3
 R4
 R5
-Z80 8C:\Modeltech_pe_edu_10.4a\examples\lab4\test_on_chip.vhd
-Z81 FC:\Modeltech_pe_edu_10.4a\examples\lab4\test_on_chip.vhd
+Z89 8C:\Modeltech_pe_edu_10.4a\examples\lab4\test_on_chip.vhd
+Z90 FC:\Modeltech_pe_edu_10.4a\examples\lab4\test_on_chip.vhd
 l0
 L5
 V:J@[aOFR7`TB83z[hZTH61
 !s100 R7:d6i8X4^2E0:VJ3N@nT1
 R8
 32
-Z82 !s110 1601722999
+Z91 !s110 1601722999
 !i10b 1
-Z83 !s108 1601722999.000000
-Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\test_on_chip.vhd|
-Z85 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\test_on_chip.vhd|
+Z92 !s108 1601722999.000000
+Z93 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Modeltech_pe_edu_10.4a\examples\lab4\test_on_chip.vhd|
+Z94 !s107 C:\Modeltech_pe_edu_10.4a\examples\lab4\test_on_chip.vhd|
 !i113 1
 R13
 R14
@@ -481,40 +525,40 @@ Atest_chip
 R16
 R3
 R4
-Z86 DEx4 work 4 test 0 22 :J@[aOFR7`TB83z[hZTH61
+DEx4 work 4 test 0 22 :J@[aOFR7`TB83z[hZTH61
 l20
 L8
-Z87 V3KddzAXEEnR6LSTSKEcL11
-Z88 !s100 [h]jjoF>Wil:RSLcgHU[P3
+V3KddzAXEEnR6LSTSKEcL11
+!s100 [h]jjoF>Wil:RSLcgHU[P3
 R8
 32
-R82
+R91
 !i10b 1
-R83
-R84
-R85
+R92
+R93
+R94
 !i113 1
 R13
 R14
 Etest_cpu
-Z89 w1601633637
+Z95 w1601633637
 R16
 R3
 R4
 R5
-Z90 8C:/Modeltech_pe_edu_10.4a/examples/lab4/test_cpu.vhd
-Z91 FC:/Modeltech_pe_edu_10.4a/examples/lab4/test_cpu.vhd
+Z96 8C:/Modeltech_pe_edu_10.4a/examples/lab4/test_cpu.vhd
+Z97 FC:/Modeltech_pe_edu_10.4a/examples/lab4/test_cpu.vhd
 l0
 L5
 VimBz]:KiTGXj0:WIc[:e42
 !s100 OnXBmk?^mjXNnDVQD4J1<0
 R8
 32
-Z92 !s110 1601722672
+Z98 !s110 1601722672
 !i10b 1
-Z93 !s108 1601722672.000000
-Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab4/test_cpu.vhd|
-Z95 !s107 C:/Modeltech_pe_edu_10.4a/examples/lab4/test_cpu.vhd|
+Z99 !s108 1601722672.000000
+Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Modeltech_pe_edu_10.4a/examples/lab4/test_cpu.vhd|
+Z101 !s107 C:/Modeltech_pe_edu_10.4a/examples/lab4/test_cpu.vhd|
 !i113 1
 R13
 R14
@@ -529,11 +573,11 @@ VKBJGbiaL=7z`YdlH[`K>Z2
 !s100 @^iH>:Xa1ZOSVndglom221
 R8
 32
-R92
+R98
 !i10b 1
-R93
-R94
-R95
+R99
+R100
+R101
 !i113 1
 R13
 R14

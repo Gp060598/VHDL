@@ -38,7 +38,7 @@ port(
       Ins:in instruction; --feed the instruction to the datapath
       offset,Din:in std_logic_vector(N-1 downto 0);
       Bypass:in std_logic_vector(2 downto 0);
-      address_en,data_en:in std_logic;
+      address_en,data_en,wren:in std_logic;
       clk:in std_logic;
       Z_flag,n_flag,o_flag:out std_logic;
       address,data:out std_logic_vector(N-1 downto 0)
@@ -75,16 +75,16 @@ signal addr:integer;
 
 
  begin
- A0:divider port map(clk_in=>clk, clk_out=>clk_out);
+ --A0:divider port map(clk_in=>clk, clk_out=>clk_out);
 
- A1:fsm port map(instr=>instr,clk=>clk_out,reset=>reset,state=>state,pc_out=>upc);
+ A0:fsm port map(instr=>instr,clk=>clk,reset=>reset,state=>state,pc_out=>upc);
 
- A2: micro_rom port map(inst=>state,flag=>flag,upc=>upc,reset=>reset,wren=>wren,
+ A1: micro_rom port map(inst=>state,flag=>flag,upc=>upc,reset=>reset,wren=>wren,
                           reada=>reada,readb=>readb,uinst=>uinst,bypass=>bypass,
                           address_en=>add_en, data_en=>d_en,r_wn=>writeread);
 
- A3: data_way generic map(3,16) port map(Ins=>Ins,offset=>offset,din=>din,bypass=>bypass,
-                                        address_en=>add_en,data_en=>d_en,clk=>clk_out,
+ A2: data_way generic map(3,16) port map(Ins=>Ins,offset=>offset,din=>din,bypass=>bypass,wren=>wren,
+                                        address_en=>add_en,data_en=>d_en,clk=>clk,
                                         z_flag=>z,n_flag=>n_f,o_flag=>o,address=>address,data=>dout);
 
  

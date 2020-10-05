@@ -10,7 +10,7 @@ port( --Input:in std_logic_vector(N-1 downto 0);
       Ins:in instruction; --feed the instruction to the datapath
       offset,Din:in std_logic_vector(N-1 downto 0);
       Bypass:in std_logic_vector(2 downto 0);
-      address_en,data_en:in std_logic;
+      address_en,data_en,wren:in std_logic;
       clk:in std_logic;
       Z_flag,n_flag,o_flag:out std_logic;
       address,data:out std_logic_vector(N-1 downto 0)
@@ -89,7 +89,9 @@ signal Zfl,nfl,ofl:std_logic;
             o_flag<='0';
            else 
             if(address_en='1') then Address<=Sum_in; end if;
-       	    if(data_en='1') then data<=sum_in;
+       	    if(data_en='1') then --data<=sum_in;
+             if wren='0' then address<=X"F000"; end if;
+                data<=sum_in;
                  z_flag<=zfl;
                  n_flag<=nfl;
                  o_flag<=ofl;

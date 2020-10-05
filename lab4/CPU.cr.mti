@@ -1,4 +1,15 @@
-C:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd
+C:/Modeltech_pe_edu_10.4a/examples/lab4/On_chip_Comp.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab4/On_chip_Comp.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package my_declerations
+-- Compiling entity comp
+-- Compiling architecture structure_comp of comp
+-- Loading entity memory
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab4/fsm.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -7,24 +18,15 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity FSM
 -- Compiling architecture data_flow of FSM
 
-} {} {}} C:/Modeltech_pe_edu_10.4a/examples/lab4/micro_rom.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\lab4\micro_rom.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package my_declerations
--- Compiling entity micro_rom
--- Compiling architecture m_rom of micro_rom
-
-} {} {}} C:/Modeltech_pe_edu_10.4a/examples/lab4/Fake_memory.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\lab4\Fake_memory.vhd}
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/lab4/Fake_memory.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab4/Fake_memory.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package my_declerations
 -- Loading package std_logic_arith
--- Compiling entity fake_memory
--- Compiling architecture structure_fake of fake_memory
+-- Compiling entity memory
+-- Compiling architecture structure_fake of memory
 
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/lab4/GPIO.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\lab4\GPIO.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -34,6 +36,15 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Loading package my_declerations
 -- Compiling entity GPIO
 -- Compiling architecture GPIO_structure of GPIO
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/lab4/micro_rom.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\lab4\micro_rom.vhd}
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package my_declerations
+-- Compiling entity micro_rom
+-- Compiling architecture m_rom of micro_rom
 
 } {} {}} C:/Modeltech_pe_edu_10.4a/examples/lab4/test_on_chip.vhd {1 {vcom -work work -2002 -explicit -stats=none {C:\Modeltech_pe_edu_10.4a\examples\lab4\test_on_chip.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
@@ -65,7 +76,17 @@ Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 
 -- Compiling entity alu
 -- Compiling architecture alu_structure of alu
 
-} {} {}} C:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd
+} {} {}} C:/altera/LAB4/memory.vhd {0 {vcom -work work -2002 -explicit -stats=none C:/altera/LAB4/memory.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+** Error: C:/altera/LAB4/memory.vhd(39): Library altera_mf not found.
+** Error: C:/altera/LAB4/memory.vhd(40): (vcom-1136) Unknown identifier "altera_mf".
+
+** Error: C:/altera/LAB4/memory.vhd(42): VHDL Compiler exiting
+
+} {6.0 8.0 9.0 10.0} {}} C:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Modeltech_pe_edu_10.4a/examples/lab4/reg_file.vhd
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO

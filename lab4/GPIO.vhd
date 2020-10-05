@@ -18,7 +18,7 @@ process(clk,reset,ie,oe,reg_in,reg_out,din,gpio_out) is
  begin
  if(reset='0') then
  gpio_out<=(others=>'0');
- reg_out<=(others=>'0');
+ --reg_out<=(others=>'0');
  else
   if(ie='0') then reg_in <=din;
   else reg_in<=gpio_out;
