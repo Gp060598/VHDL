@@ -1,0 +1,14 @@
+module top;
+    input  logic clk;
+		input  logic reset;
+		input  logic write;
+		input  logic [15:0] data_in;
+		input  logic [2:0] address;
+		output logic [15:0] data_out;
+		
+		always #50 clk =~clk;
+	config_reg t0(clk, reset, write, data_in, address, data_out);
+	test t1(clk, reset, write, data_in, address, data_out);	
+		
+endmodule;
+

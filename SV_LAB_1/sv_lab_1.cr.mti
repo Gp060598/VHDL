@@ -1,0 +1,31 @@
+C:/Modeltech_pe_edu_10.4a/examples/SV_LAB_1/Test_swap.sv {2 {vlog -work work -sv {C:\Modeltech_pe_edu_10.4a\examples\SV_LAB_1\Test_swap.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module test_config_reg_1
+** Warning: C:\Modeltech_pe_edu_10.4a\examples\SV_LAB_1\Test_swap.sv(22): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	test_config_reg_1
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/SV_LAB_1/config_reg_buggy_questa.svp {1 {vlog -work work -sv C:/Modeltech_pe_edu_10.4a/examples/SV_LAB_1/config_reg_buggy_questa.svp
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module config_reg
+
+Top level modules:
+	config_reg
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/SV_LAB_1/Test.sv {1 {vlog -work work -sv {C:\Modeltech_pe_edu_10.4a\examples\SV_LAB_1\Test.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module test_config_reg
+
+Top level modules:
+	test_config_reg
+
+} {} {}} C:/Modeltech_pe_edu_10.4a/examples/SV_LAB_1/Test_1.sv {1 {vlog -work work -sv {C:\Modeltech_pe_edu_10.4a\examples\SV_LAB_1\Test_1.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module test_config_reg_1
+
+Top level modules:
+	test_config_reg_1
+
+} {} {}}
